@@ -11,6 +11,7 @@ import { PagebolComponent } from './pagebol/pagebol.component';
 import { RouterModule } from '@angular/router';
 import { LugaresbComponent } from './lugaresb/lugaresb.component';
 import { Pagecol1Component } from './pagecol1/pagecol1.component';
+import { Carrouselc1Component } from './carrouselc1/carrouselc1.component';
 // import { FormsModule} from "@angular/forms";
 
 @NgModule({
@@ -22,6 +23,7 @@ import { Pagecol1Component } from './pagecol1/pagecol1.component';
     PagebolComponent,
     LugaresbComponent,
     Pagecol1Component,
+    Carrouselc1Component,
 
     // FormsModule,
   ],

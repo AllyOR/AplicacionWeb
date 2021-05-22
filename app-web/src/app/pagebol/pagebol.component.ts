@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class PagebolComponent implements OnInit {
 
   interpolationBinding = 'SALAR DE UYUNI';
-  tituloColor = 'green';
-  vista1 = false;
+  tituloColor = 'darkblue';
+  // vista1 = false;
   vista2 = true;//TEXTO TRANS
   oculto = true;
 

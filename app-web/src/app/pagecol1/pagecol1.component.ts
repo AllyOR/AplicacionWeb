@@ -7,10 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Pagecol1Component implements OnInit {
 
-  interpolationBinding = 'COLOMBIA';
-  tituloColor = 'green';
-  vista1 = false;
-  oculto = true;
+  interpolationBinding = 'LA PLAYA DE BELÉN';
+  tituloColor = 'darkblue';
   constructor() { }
 
   ngOnInit(): void {
