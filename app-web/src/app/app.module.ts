@@ -13,6 +13,7 @@ import { LugaresbComponent } from './lugaresb/lugaresb.component';
 import { Pagecol1Component } from './pagecol1/pagecol1.component';
 import { Carrouselc1Component } from './carrouselc1/carrouselc1.component';
 import { Cardsc1Component } from './cardsc1/cardsc1.component';
+import { FooterComponent } from './footer/footer.component';
 // import { FormsModule} from "@angular/forms";
 
 @NgModule({
@@ -26,6 +27,7 @@ import { Cardsc1Component } from './cardsc1/cardsc1.component';
     Pagecol1Component,
     Carrouselc1Component,
     Cardsc1Component,
+    FooterComponent,
 
     // FormsModule,
   ],

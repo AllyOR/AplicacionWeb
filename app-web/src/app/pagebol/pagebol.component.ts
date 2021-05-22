@@ -7,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagebolComponent implements OnInit {
 
+  name = 'Bolivia - Alison Orellana Rios'
   interpolationBinding = 'SALAR DE UYUNI';
   tituloColor = 'darkblue';
+  colorl = 'lightgray';
   // vista1 = false;
-  vista2 = true;//TEXTO TRANS
+  vista2 = true;//TEXTO TRANSP
   oculto = true;
 
   constructor() { }
