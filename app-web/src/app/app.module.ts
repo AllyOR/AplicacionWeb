@@ -9,6 +9,9 @@ import { CarrouselbComponent } from './carrouselb/carrouselb.component';
 import { PagebolComponent } from './pagebol/pagebol.component';
 
 import { RouterModule } from '@angular/router';
+import { LugaresbComponent } from './lugaresb/lugaresb.component';
+import { Pagecol1Component } from './pagecol1/pagecol1.component';
+// import { FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -16,7 +19,11 @@ import { RouterModule } from '@angular/router';
     NavbarComponent,
     CardsbComponent,
     CarrouselbComponent,
-    PagebolComponent
+    PagebolComponent,
+    LugaresbComponent,
+    Pagecol1Component,
+
+    // FormsModule,
   ],
   imports: [
     BrowserModule,
@@ -25,6 +32,7 @@ import { RouterModule } from '@angular/router';
       {path: 'pagebol', component: PagebolComponent},
       // {path: 'pagecol1', component: Pagecol1Component},
       // {path: 'pagecol2', component: Pagecol2Component},
+      {path: 'pagecol1', component: Pagecol1Component},
       {path: '', redirectTo: '', pathMatch: 'full'},
       // {path: '**', component: PageNotFoundComponent}
     ]),

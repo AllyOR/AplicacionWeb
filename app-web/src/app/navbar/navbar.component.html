@@ -3,7 +3,8 @@
 
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="assets/images/logounir.png" alt="IMG" width="30" height="24">
+      <img [src] = imags width="60" height="40">
+<!--      <img src="assets/images/logounir.png" alt="IMG" width="30" height="24">-->
     </a>
     <a class="navbar-brand" href="#">ZADIAL</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,12 +23,12 @@
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 <!--            <li><a class="dropdown-item" href="page-bol-uyuni.html">Uyuni - Bolivia</a></li>-->
             <li>
-<!--              <a class="dropdown-item" href="page-bol-uyuni.html">Uyuni - Bolivia</a>-->
               <a class="dropdown-item" routerLink="/pagebol">Salar de Uyuni - Bolivia</a>
             </li>
-
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Nevado el Cocuy - Colombia</a></li>
+            <li>
+              <a class="dropdown-item" routerLink="/pagecol1">Nevado el Cocuy - Colombia</a>
+            </li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">La Playa de Belén - Colombia</a></li>
           </ul>
@@ -43,9 +44,4 @@
 </nav>
 
 
-<!--IMAGENES DIF MOSTRAR-->
-<!--<div>-->
-<!--  &lt;!&ndash;    <img [src] = imags>&ndash;&gt;-->
-<!--  <img src="assets/images/logounir.png" alt="">-->
-<!--</div>-->
-<!---->
+
