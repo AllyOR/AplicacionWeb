@@ -1,0 +1,15 @@
+.btn-primary{
+  background-color: darkslategrey;
+  color: azure;
+  border-radius: 2rem;
+}
+
+
+.hidden{
+  display: none;
+}
+
+.unhidden{
+  /*background-color: aquamarine;*/
+  display: block;
+}

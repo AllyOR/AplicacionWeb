@@ -7,12 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagebolComponent implements OnInit {
 
-  name = 'Bolivia - Alison Orellana Rios'
+  name = 'Alison Orellana Rios';
   interpolationBinding = 'SALAR DE UYUNI';
   tituloColor = 'darkblue';
-  colorl = 'lightgray';
-  // vista1 = false;
-  vista2 = true;//TEXTO TRANSP
   oculto = true;
 
   constructor() { }
@@ -20,7 +17,7 @@ export class PagebolComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  enviar($event : any){
+  mostrar($event : any){
     console.log($event);
     this.oculto = !this.oculto;
   }
