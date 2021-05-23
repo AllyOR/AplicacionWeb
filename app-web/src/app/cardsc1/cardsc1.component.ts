@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Cardsc1Component implements OnInit {
 
+  interpolationBinding1 = 'TRANS';
+  oculto = true;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  mostrar(){
+    // console.log($event);
+    this.oculto = !this.oculto;
+  }
 }
