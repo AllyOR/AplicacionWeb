@@ -6,3 +6,11 @@
   /*background-color: aquamarine;*/
   display: block;
 }
+
+img {
+  border-radius: 100%;
+}
+
+.cr{
+  border-radius: 5rem;
+}
