@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app-web';
+  tituloColor = "green";
+  colorl = "blue";
   name = 'ZADIAL';
   imags : string = "assets/images/logounir.png";
   imags1 : string = "assets/images/salar1.jpeg";
