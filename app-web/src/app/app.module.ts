@@ -14,6 +14,7 @@ import { Carrouselc1Component } from './carrouselc1/carrouselc1.component';
 import { Cardsc1Component } from './cardsc1/cardsc1.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactosComponent } from './contactos/contactos.component';
+import { InicioComponent } from './inicio/inicio.component';
 // import { FormsModule} from "@angular/forms";
 
 @NgModule({
@@ -28,6 +29,7 @@ import { ContactosComponent } from './contactos/contactos.component';
     Cardsc1Component,
     FooterComponent,
     ContactosComponent,
+    InicioComponent,
 
     // FormsModule,
   ],
@@ -39,7 +41,10 @@ import { ContactosComponent } from './contactos/contactos.component';
       {path: 'pagecol1', component: Pagecol1Component},
       // {path: 'pagecol2', component: Pagecol2Component},
       {path: 'contactos', component: ContactosComponent},
-      {path: '', redirectTo: '', pathMatch: 'full'},
+      // {path: '', redirectTo: '', pathMatch: 'full'},
+      {path: '', component: InicioComponent},
+
+
       // {path: '**', component: PageNotFoundComponent}
     ]),
   ],
