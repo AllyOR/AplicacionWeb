@@ -8,8 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class PagebolComponent implements OnInit {
 
   name = 'Alison Orellana Rios';
-  interpolationBinding = 'SALAR DE UYUNI';
+  lugar = 'SALAR DE UYUNI';
   tituloColor = 'darkblue';
+  vista1 = false;
   oculto = true;
 
   constructor() { }

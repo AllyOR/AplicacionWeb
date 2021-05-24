@@ -13,9 +13,4 @@ export class Cardsc1Component implements OnInit {
 
   ngOnInit(): void {
   }
-
-  mostrar(){
-    // console.log($event);
-    this.oculto = !this.oculto;
-  }
 }

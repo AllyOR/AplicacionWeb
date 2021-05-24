@@ -10,9 +10,40 @@
 <!--  </div>-->
 <!--</div>-->
 
-<!--<div *ngFor="let item of items; let i=index">-->
-<!--  <div *ngIf="i != n">{{i}} is not n</div>-->
+<!--<div *ngFor="let item of lista; let i=index">-->
+<!--  <div *ngIf="i != 1">{{i}} is not n</div>-->
 <!--</div>-->
+
+<!--<div class="row" *ngFor="let item of lista; let index=index">-->
+<!--  <div class="col">-->
+<!--    {{lista[index].nombre}}-->
+<!--  </div>-->
+<!--  <div class="col">-->
+<!--    {{lista[index+1].nombre}}-->
+<!--  </div>-->
+<!--  <div class="col">-->
+<!--    {{lista[index+2].nombre}}-->
+<!--  </div>-->
+<!--</div>-->
+
+
+<!--<tr *ngFor="let hero of lista; let i = index">-->
+<!--  <td>{{hero.nombre}}</td>-->
+<!--  <p>{{hero.descripcion}}</p>-->
+<!--  <p>{{hero.univ}}</p>-->
+<!--&lt;!&ndash;  <td>{{i}}</td>&ndash;&gt;-->
+<!--</tr>-->
+
+<div *ngFor="let elem of lista; let i = index" class="container pt-3">
+  <div class="row text-center">
+    <div class="col-lg-4 col-sm-12">{{elem.nombre}}</div>
+    <div class="col-lg-4 col-sm-12">{{elem.descripcion}}</div>
+    <div class="col-lg-4 col-sm-12">{{elem.lugar}}</div>
+    <hr>
+  </div>
+
+  <!--  <td>{{i}}</td>-->
+</div>
 
 <!--<p class="text-center" *ngIf="ocu">lista works!</p>-->
 

@@ -9,7 +9,6 @@ import { CarrouselbComponent } from './carrouselb/carrouselb.component';
 import { PagebolComponent } from './pagebol/pagebol.component';
 
 import { RouterModule } from '@angular/router';
-import { LugaresbComponent } from './lugaresb/lugaresb.component';
 import { Pagecol1Component } from './pagecol1/pagecol1.component';
 import { Carrouselc1Component } from './carrouselc1/carrouselc1.component';
 import { Cardsc1Component } from './cardsc1/cardsc1.component';
@@ -24,7 +23,6 @@ import { ContactosComponent } from './contactos/contactos.component';
     CardsbComponent,
     CarrouselbComponent,
     PagebolComponent,
-    LugaresbComponent,
     Pagecol1Component,
     Carrouselc1Component,
     Cardsc1Component,
