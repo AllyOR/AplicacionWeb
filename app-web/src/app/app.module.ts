@@ -15,6 +15,9 @@ import { Cardsc1Component } from './cardsc1/cardsc1.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactosComponent } from './contactos/contactos.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { Cards2Component } from './cards2/cards2.component';
+import { Pagecol2Component } from './pagecol2/pagecol2.component';
+import { Carrouselc2Component } from './carrouselc2/carrouselc2.component';
 // import { FormsModule} from "@angular/forms";
 
 @NgModule({
@@ -25,11 +28,14 @@ import { InicioComponent } from './inicio/inicio.component';
     CarrouselbComponent,
     PagebolComponent,
     Pagecol1Component,
+    Pagecol2Component,
     Carrouselc1Component,
     Cardsc1Component,
     FooterComponent,
     ContactosComponent,
     InicioComponent,
+    Cards2Component,
+    Carrouselc2Component,
 
     // FormsModule,
   ],
@@ -39,7 +45,7 @@ import { InicioComponent } from './inicio/inicio.component';
     RouterModule.forRoot([
       {path: 'pagebol', component: PagebolComponent},
       {path: 'pagecol1', component: Pagecol1Component},
-      // {path: 'pagecol2', component: Pagecol2Component},
+      {path: 'pagecol2', component: Pagecol2Component},
       {path: 'contactos', component: ContactosComponent},
       // {path: '', redirectTo: '', pathMatch: 'full'},
       {path: '', component: InicioComponent},
