@@ -8,16 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class CardsbComponent implements OnInit {
 
   oculto = true;
+  preg1 = "¿Qué visitar?";
+  preg2 = "¿Cómo llegar?";
+  preg3 = "¿Dónde hospedarse?";
+  preg4 = "¿Qué comer?";
 
-  imgcb1 : string = "assets/images/uyuni3.jpeg";
-  imgcb2 : string = "assets/images/uyuni5.jpeg";
-  imgcb3 : string = "assets/images/salar9_1.jpg";
-  imgcb4 : string = "assets/images/salar16.jpeg";
-  imgllb : string = "assets/images/uyuni2_1.jpeg";
-  imghb : string = "assets/images/salar-domos.jpg";
-  imgfb1 : string = "assets/images/uyuni-food.jpeg";
-  imgfb2 : string = "assets/images/uyuni-food1.jpeg";
-  imgfb3 : string = "assets/images/uyuni-food3.jpeg";
   constructor() { }
 
   ngOnInit(): void {

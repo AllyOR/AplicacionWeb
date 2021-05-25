@@ -1,8 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AppWeb-ZADIAL</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
 <app-navbar></app-navbar>
-<!--<div>-->
-<!--  <a class="button" routerLink="/pagebol">BOLIVIA</a>-->
-<!--</div>-->
-
+<br>
 <div>
   <div class="row">
     <div class="col">
@@ -17,18 +23,15 @@
 </div>
 
 <div class="content" role="main">
-<!--<app-inicio></app-inicio>-->
   <router-outlet></router-outlet>
-<!--  <app-contactos></app-contactos>-->
+  <app-contactos></app-contactos>
 
   <div class="text-center pt-4 pb-4">
     <!-- Button trigger modal -->
-    gi
 
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
       Información
     </button>
-
 
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -51,3 +54,5 @@
 
   <app-footer></app-footer>
 </div>
+</body>
+</html>

@@ -6,9 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contactos.component.css']
 })
 export class ContactosComponent implements OnInit {
-  numero = '';
+  name = 'BIENVENIDOS!';
   ocu = false;
-  listaTodo = [];
 
   lista = [
     {
@@ -18,13 +17,13 @@ export class ContactosComponent implements OnInit {
     },
     {
       "nombre":"Lilly Zamara Zambrano",
-      "descripcion":"Diseño",
-      "lugar": "assets/images/salar18_1.jpg"
+      "descripcion":"Diseñadora gráfica",
+      "lugar": "Ocaña - Colombia"
     },
     {
-      "nombre":"Diego Romero",
-      "descripcion":"Diseño",
-      "lugar": "assets/images/salar18_1.jpg"
+      "nombre":"Diego Romero Cárdenas",
+      "descripcion":"Diseñador gráfico",
+      "lugar": "Bogotá - Colombia"
     },
   ];
 
@@ -32,5 +31,4 @@ export class ContactosComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
 }

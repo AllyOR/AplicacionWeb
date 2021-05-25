@@ -10,7 +10,6 @@ export class PagebolComponent implements OnInit {
   name = 'Alison Orellana Rios';
   lugar = 'SALAR DE UYUNI';
   tituloColor = 'darkblue';
-  vista1 = false;
   oculto = true;
 
   constructor() { }

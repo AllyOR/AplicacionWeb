@@ -1,38 +1,12 @@
-<p *ngIf="ocu">lista works!</p>
-
-
-<!--<div class="container justify-content-center text-center">-->
-<!--  <div class="row">-->
-<!--    <div class="col-12" *ngFor="let item of lista">-->
-<!--      <img src="assets/images/bolivia_flag.jpeg" class="card-img-top" alt="..." height="10rem" width="2rem">-->
-<!--      {{item.nombre}}- {{item.descripcion}}-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-
-<!--<div *ngFor="let item of lista; let i=index">-->
-<!--  <div *ngIf="i != 1">{{i}} is not n</div>-->
-<!--</div>-->
-
-<!--<div class="row" *ngFor="let item of lista; let index=index">-->
-<!--  <div class="col">-->
-<!--    {{lista[index].nombre}}-->
-<!--  </div>-->
-<!--  <div class="col">-->
-<!--    {{lista[index+1].nombre}}-->
-<!--  </div>-->
-<!--  <div class="col">-->
-<!--    {{lista[index+2].nombre}}-->
-<!--  </div>-->
-<!--</div>-->
-
-
-<!--<tr *ngFor="let hero of lista; let i = index">-->
-<!--  <td>{{hero.nombre}}</td>-->
-<!--  <p>{{hero.descripcion}}</p>-->
-<!--  <p>{{hero.univ}}</p>-->
-<!--&lt;!&ndash;  <td>{{i}}</td>&ndash;&gt;-->
-<!--</tr>-->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<p *ngIf="ocu" class="text-center">{{name}}</p>
 
 <div *ngFor="let elem of lista; let i = index" class="container pt-3">
   <div class="row text-center">
@@ -42,33 +16,6 @@
     <hr>
   </div>
 
-  <!--  <td>{{i}}</td>-->
 </div>
-
-<!--<p class="text-center" *ngIf="ocu">lista works!</p>-->
-
-<!--<div class="container">-->
-<!--  <div class="row">-->
-<!--    <div class="col">-->
-<!--      <h4 style="margin-top: 2rem">ejemplo [ngSwitch]</h4>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
-<!--<div class="container py-2">-->
-<!--  <div class="row">-->
-<!--    <div class="col">-->
-<!--      <div class="form-group">-->
-<!--        <label>Introduce un numero</label>-->
-<!--        <input class="input-group" [(ngModel)]="numero">-->
-<!--      </div>-->
-
-<!--      <ul class="list-group" [ngSwitch]="numero">-->
-<!--        <li class="list-group-item" *ngSwitchCase="1">Numero 1</li>-->
-<!--        <li class="list-group-item" *ngSwitchCase="2">Numero 2</li>-->
-<!--        <li class="list-group-item" *ngSwitchCase="3">Numero 3</li>-->
-<!--        <li class="list-group-item" *ngSwitchCase="4">Numero 4</li>-->
-<!--        <li class="list-group-item" *ngSwitchDefault>Escoge un numero</li>-->
-<!--      </ul>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->
+</body>
+</html>
