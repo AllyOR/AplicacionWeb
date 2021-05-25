@@ -19,13 +19,5 @@ export class CarrouselbComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  mostrarCarBol($event : any){
-    this.oculto = !this.oculto;
-  }
-  enviar($event : any){
-
-    this.oculto = !this.oculto;
-  }
 }
 

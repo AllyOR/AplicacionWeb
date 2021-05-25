@@ -8,21 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class Pagecol1Component implements OnInit {
 
   name = 'Colombia - Lilly Zamara Zambrano'
-  interpolationBinding = 'LA PLAYA DE BELÉN';
+  lugar = 'LA PLAYA DE BELÉN';
   tituloColor = 'darkblue';
-  colorl = 'lightgray';
-  // vista1 = false;
-  vista2 = true;//TEXTO TRANSP
-  oculto = true;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  enviar($event : any){
-    console.log($event);
-    this.oculto = !this.oculto;
-  }
 }
-

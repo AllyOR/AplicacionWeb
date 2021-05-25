@@ -9,11 +9,12 @@ import { CarrouselbComponent } from './carrouselb/carrouselb.component';
 import { PagebolComponent } from './pagebol/pagebol.component';
 
 import { RouterModule } from '@angular/router';
-import { LugaresbComponent } from './lugaresb/lugaresb.component';
 import { Pagecol1Component } from './pagecol1/pagecol1.component';
 import { Carrouselc1Component } from './carrouselc1/carrouselc1.component';
 import { Cardsc1Component } from './cardsc1/cardsc1.component';
 import { FooterComponent } from './footer/footer.component';
+import { ContactosComponent } from './contactos/contactos.component';
+import { InicioComponent } from './inicio/inicio.component';
 // import { FormsModule} from "@angular/forms";
 
 @NgModule({
@@ -23,11 +24,12 @@ import { FooterComponent } from './footer/footer.component';
     CardsbComponent,
     CarrouselbComponent,
     PagebolComponent,
-    LugaresbComponent,
     Pagecol1Component,
     Carrouselc1Component,
     Cardsc1Component,
     FooterComponent,
+    ContactosComponent,
+    InicioComponent,
 
     // FormsModule,
   ],
@@ -36,10 +38,13 @@ import { FooterComponent } from './footer/footer.component';
     // AppRoutingModule,
     RouterModule.forRoot([
       {path: 'pagebol', component: PagebolComponent},
-      // {path: 'pagecol1', component: Pagecol1Component},
-      // {path: 'pagecol2', component: Pagecol2Component},
       {path: 'pagecol1', component: Pagecol1Component},
-      {path: '', redirectTo: '', pathMatch: 'full'},
+      // {path: 'pagecol2', component: Pagecol2Component},
+      {path: 'contactos', component: ContactosComponent},
+      // {path: '', redirectTo: '', pathMatch: 'full'},
+      {path: '', component: InicioComponent},
+
+
       // {path: '**', component: PageNotFoundComponent}
     ]),
   ],
