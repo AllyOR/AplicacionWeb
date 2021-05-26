@@ -7,9 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  imags : string = "assets/images/logounir.png";
-  imags1 : string = "assets/images/salar1.jpeg";
-  imags2 : string = "assets/images/salar2.jpeg";
+  imags : string = "assets/images/general/logounir.png";
 
   lugar1 = "Salar de Uyuni - Bolivia";
   lugar2 = "La Playa de Belén - Colombia";

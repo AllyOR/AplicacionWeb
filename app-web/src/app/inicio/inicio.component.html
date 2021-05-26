@@ -1,1 +1,42 @@
-<img class="img-fluid" src="assets/images/inicial.jpeg" alt="">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Inicio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<img class="img-fluid" src="assets/images/general/inicial.jpeg" alt="">
+
+<div class="container" [ngClass]="oculto ? 'hidden' : 'unhidden'">
+  <div class="row justify-content-center py-5">
+    <div class="col-md-6 col-sm-12 col-lg-8">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title text-center" [style.color]="tituloColor">Agradecimientos:</h5>
+          <div class="row">
+            <div class="col-3">
+              <img src="assets/images/general/logounir.png" class="card-img-top" alt="..." width="2rem">
+            </div>
+            <div class="col">
+              <p class="card-text">
+                {{name}}
+                <br>
+                {{mr}}
+                <br>
+                UNIR
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="justify-content-center text-center py-3">
+  <button class="btn btn-primary text-center justify-content-center cr" (click)="mostrar(oculto)">Curso</button>
+</div>
+
+</body>
+</html>

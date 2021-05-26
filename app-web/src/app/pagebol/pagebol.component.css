@@ -3,12 +3,7 @@
 }
 
 .unhidden{
-  /*background-color: aquamarine;*/
   display: block;
-}
-
-img {
-  border-radius: 100%;
 }
 
 .cr{

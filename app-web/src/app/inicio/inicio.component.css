@@ -1,0 +1,12 @@
+.hidden{
+  display: none;
+}
+
+.unhidden{
+  display: block;
+}
+
+.cr{
+  border-radius: 5rem;
+  background-color: midnightblue;
+}

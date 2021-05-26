@@ -2,20 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>form</title>
+  <title>Lista</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <p *ngIf="ocu" class="text-center">{{name}}</p>
 
-<div *ngFor="let elem of lista; let i = index" class="container pt-3">
+<div *ngFor="let elem of lista; let i = index" class="container pt-2">
   <div class="row text-center">
     <div class="col-lg-4 col-sm-12">{{elem.nombre}}</div>
     <div class="col-lg-4 col-sm-12">{{elem.descripcion}}</div>
     <div class="col-lg-4 col-sm-12">{{elem.lugar}}</div>
     <hr>
   </div>
-
 </div>
+
 </body>
 </html>

@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InicioComponent implements OnInit {
 
+  name = 'Diseño y Tecnología Web';
+  mr = 'Máster Universitario en Diseño y Producción Multimedia';
+  tituloColor = 'darkblue';
+  oculto = true;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  mostrar($event : any){
+    this.oculto = !this.oculto;
+  }
 }
