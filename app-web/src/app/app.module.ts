@@ -18,7 +18,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { Cards2Component } from './cards2/cards2.component';
 import { Pagecol2Component } from './pagecol2/pagecol2.component';
 import { Carrouselc2Component } from './carrouselc2/carrouselc2.component';
-// import { FormsModule} from "@angular/forms";
+import { FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -36,7 +36,6 @@ import { Carrouselc2Component } from './carrouselc2/carrouselc2.component';
     InicioComponent,
     Cards2Component,
     Carrouselc2Component,
-
     // FormsModule,
   ],
   imports: [
@@ -49,8 +48,6 @@ import { Carrouselc2Component } from './carrouselc2/carrouselc2.component';
       {path: 'contactos', component: ContactosComponent},
       // {path: '', redirectTo: '', pathMatch: 'full'},
       {path: '', component: InicioComponent},
-
-
       // {path: '**', component: PageNotFoundComponent}
     ]),
   ],

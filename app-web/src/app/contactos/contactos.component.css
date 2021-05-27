@@ -1,0 +1,13 @@
+.btn-primary{
+  background-color: midnightblue;
+  color: azure;
+  border-radius: 3rem;
+}
+
+.oculto{
+  display: none;
+}
+
+.visible{
+  display: block;
+}

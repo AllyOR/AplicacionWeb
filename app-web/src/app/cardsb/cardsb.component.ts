@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardsbComponent implements OnInit {
 
-  oculto = true;
   preg1 = "¿Qué visitar?";
   preg2 = "¿Cómo llegar?";
   preg3 = "¿Dónde hospedarse?";
@@ -18,7 +17,4 @@ export class CardsbComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  mostrar(){
-    this.oculto = !this.oculto;
-  }
 }

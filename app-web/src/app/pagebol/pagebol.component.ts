@@ -7,10 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PagebolComponent implements OnInit {
 
-  name = 'Alison Orellana Rios';
   lugar = 'SALAR DE UYUNI';
   tituloColor = 'darkblue';
-  oculto = true;
   ocultonom = true;
   nomlug = 'Salar de Uyuni';
 
@@ -19,9 +17,4 @@ export class PagebolComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  mostrar($event : any){
-    console.log($event);
-    this.oculto = !this.oculto;
-  }
 }
-

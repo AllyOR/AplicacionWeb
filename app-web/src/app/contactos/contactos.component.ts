@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-contactos',
@@ -6,8 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contactos.component.css']
 })
 export class ContactosComponent implements OnInit {
-  name = 'BIENVENIDOS!';
-  ocu = false;
+  msg = 'CREDITOS:';
+  name = 'ZADIAL';
+  creditos = false;
 
   lista = [
     {

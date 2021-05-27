@@ -13,7 +13,6 @@ export class CarrouselbComponent implements OnInit {
   imagb3 : string = "assets/images/bol/salar12_1.jpg";
   imagb4 : string = "assets/images/bol/salar13_1.jpg";
   imagb5 : string = "assets/images/bol/salar18_1.jpg";
-  oculto = true;
 
   constructor() { }
 

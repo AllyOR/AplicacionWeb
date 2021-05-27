@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   imags : string = "assets/images/general/logounir.png";
-  mostrarNom = true;
   name1 = 'ZADIAL';
   name2 = 'WEB';
   eval = 1;
@@ -21,14 +20,4 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  // pers = 'unir';
-  // mostrarLogo(){
-    // if (this.mostrarNom == true){
-    // // if (this.pers == 'unir'){
-    //   this.imags = "assets/images/general/logounir.png";
-    // }else{
-    //   this.imags = "assets/images/general/logootra.png";
-    // }
-  // }
 }

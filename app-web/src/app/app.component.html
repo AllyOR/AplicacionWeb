@@ -8,21 +8,14 @@
 </head>
 <body>
 <app-navbar></app-navbar>
-<br>
-
-
 <div class="content" role="main">
   <router-outlet></router-outlet>
   <app-contactos></app-contactos>
 
-  <div class="text-center pt-4 pb-4">
-    <!-- Button trigger modal -->
-
+  <div class="text-center pt-4 pb-4" [ngClass]="visible ? 'visible' : 'oculto'">
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
       Información
     </button>
-
-    <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, ViewEncapsulation} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,11 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app-web';
-  tituloColor = "green";
-  colorl = "blue";
   name = 'ZADIAL';
-  imags : string = "assets/images/logounir.png";
-  imags1 : string = "assets/images/salar1.jpeg";
-  imags2 : string = "assets/images/salar2.jpeg";
-
+  visible = true;
 }
