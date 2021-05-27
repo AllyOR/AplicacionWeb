@@ -11,6 +11,8 @@ export class PagebolComponent implements OnInit {
   lugar = 'SALAR DE UYUNI';
   tituloColor = 'darkblue';
   oculto = true;
+  ocultonom = true;
+  nomlug = 'Salar de Uyuni';
 
   constructor() { }
 

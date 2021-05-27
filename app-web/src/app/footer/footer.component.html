@@ -8,15 +8,16 @@
 <body>
 <footer>
   <div class="card text-center colorb">
-  <div class="card-header">
+    <div class="card-header">
       {{name}}
     </div>
-    <div class="card-body">
-      <h5 class="card-title">Contáctanos</h5>
-      <p class="card-text">
-        Email: zadial@gmail.com<br>Todos los derechos reservados.
-      </p>
-    </div>
+    <div class="card-body" [ngSwitch]="existe">
+        <h5 class="card-title">Contáctanos</h5>
+        <p class="card-text" *ngSwitchCase="1">{{red1}}</p>
+        <p class="card-text" *ngSwitchCase="2">{{red2}}</p>
+        <p class="card-text" *ngSwitchCase="3">{{red3}}</p>
+        <p class="card-text" *ngSwitchDefault>{{red0}}</p>
+      </div>
   </div>
 </footer>
 </body>

@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Cards2Component implements OnInit {
 
+  preg1 = "¿Qué visitar?";
+  preg2 = "¿Cómo llegar?";
+  preg3 = "¿Dónde hospedarse?";
+  preg4 = "¿Qué comer?";
+
   constructor() { }
 
   ngOnInit(): void {

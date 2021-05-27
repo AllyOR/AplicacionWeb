@@ -11,10 +11,12 @@
 <app-carrouselb></app-carrouselb>
 <br>
 <h5 class="text-center">
-  <strong>El Salar de Uyuni</strong> es una inmensa planicie en forma de desierto de sal situada a más de 3.600 metros sobre el nivel del mar.
-  <br>
-  Se trata de un desierto de sal de más de más de 10 000 km. Es una de las mayores reservas de litio del planeta.<br>
-  Es la primera de las 25 maravillas naturales del planeta.
+  <p>El
+    <strong *ngIf="ocultonom" class="text-center">{{nomlug}}</strong> es una inmensa planicie en forma de desierto de sal situada a más de 3.600 metros sobre el nivel del mar.
+    <br>
+    Se trata de un desierto de sal de más de más de 10 000 km. Es una de las mayores reservas de litio del planeta.<br>
+    Es la primera de las 25 maravillas naturales del planeta.
+  </p>
 </h5>
 <br>
 <app-cardsb></app-cardsb>
