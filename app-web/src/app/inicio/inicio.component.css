@@ -7,6 +7,8 @@
 }
 
 .cr{
-  border-radius: 5rem;
-  background-color: midnightblue;
+  background-color: darkslategray;
+  color: khaki;
+  border-radius: 3rem;
+  border-color: cadetblue;
 }

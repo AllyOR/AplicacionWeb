@@ -9,31 +9,32 @@
 <body>
 <app-navbar></app-navbar>
 <div class="content" role="main">
+
+
+
+<!--  <div class="text-center pt-4 pb-4" [ngClass]="visible ? 'visible' : 'oculto'">-->
+<!--    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">-->
+<!--      Información-->
+<!--    </button>-->
+<!--    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">-->
+<!--      <div class="modal-dialog">-->
+<!--        <div class="modal-content">-->
+<!--          <div class="modal-header">-->
+<!--            <h5 class="modal-title" id="exampleModalLabel"> Bienvenid@ a {{name2}}!</h5>-->
+<!--            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>-->
+<!--          </div>-->
+<!--          <div class="modal-body">-->
+<!--            Puedes ver nuestras opciones de viaje en los sitios turísticos de Bolivia y Colombia. Disfruta el recorrido.-->
+<!--          </div>-->
+<!--          <div class="modal-footer justify-content-center">-->
+<!--            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
   <router-outlet></router-outlet>
   <app-contactos></app-contactos>
-
-  <div class="text-center pt-4 pb-4" [ngClass]="visible ? 'visible' : 'oculto'">
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      Información
-    </button>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel"> Bienvenid@ a {{name}}!</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            Puedes ver nuestras opciones de viaje en los sitios turísticos de Bolivia y Colombia. Disfruta el recorrido.
-          </div>
-          <div class="modal-footer justify-content-center">
-            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
   <app-footer></app-footer>
 </div>
 </body>

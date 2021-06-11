@@ -5,7 +5,6 @@ import { Injectable } from '@angular/core';
 })
 export class InformacionService {
   count : number = -1;
-  likesPersonas = document.getElementById("likes");
   ms = '';
   nombreEmpresa = 'ZADIAL';
   count5 : number = 0;
@@ -13,10 +12,6 @@ export class InformacionService {
   count3 : number = 0;
   count2 : number = 0;
   count1 : number = 0;
-  // ms5 = '';
-  // ms4 = '';
-  // ms2 = '';
-
   countS : number = 0;
   prom = 0;
   cc5 = 0;
@@ -24,6 +19,7 @@ export class InformacionService {
   cc3 = 0;
   cc2 = 0;
   cc1 = 0;
+
   constructor() { }
 
   total(){
@@ -31,16 +27,16 @@ export class InformacionService {
     return this.count;
   }
 
-  leer(){
-    if(this.count == 1){
-      this.ms = "Le gusta a "+ this.count +" persona";
-    }else if(this.count >= 50){
-      this.ms = "Les gusta a "+ this.count +" personas, muy bien!";
-    }else{
-      this.ms = "Les gusta a "+ this.count +" personas";
-    }
-    return this.ms;
-  }
+  // leer(c1:number){
+  //   if(c1 == 1){
+  //     this.ms = "Le gusta a "+ c1 +" persona";
+  //   }else if(c1 >= 20){
+  //     this.ms = "Les gusta a "+ c1 +" personas, muy bien!";
+  //   }else{
+  //     this.ms = "Les gusta a "+ c1 +" personas";
+  //   }
+  //   return this.ms;
+  // }
 
   getNombreEmpresa(){
     return this.nombreEmpresa;
@@ -48,6 +44,8 @@ export class InformacionService {
 
   totalSum(){
     this.countS = this.count5 + this.count4 + this.count3 + this.count2 + this.count1;
+    // this.ms = this.leer(this.countS);
+    // console.log(this.ms)
     return this.countS;
   }
 
@@ -73,35 +71,13 @@ export class InformacionService {
   }
 
   leer5(){
-    if(this.count5 == 1){
-      this.ms = "Le gusta a "+ this.count5 +" persona";
-    }else if(this.count5 >= 50){
-      this.ms = "Les gusta a "+ this.count5 +" personas, muy bien!";
-    }else{
-      this.ms = "Les gusta a "+ this.count5 +" personas";
-    }
-    return this.ms;
+    return this.voto(this.count5);
   }
-
   leer4(){
-    if(this.count4 == 1){
-      this.ms = "Le gusta a "+ this.count4 +" persona";
-    }else if(this.count4 >= 20){
-      this.ms = "Les gusta a "+ this.count4 +" personas, muy bien!";
-    }else{
-      this.ms = "Les gusta a "+ this.count4 +" personas";
-    }
-    return this.ms;
+    return this.voto(this.count4);
   }
   leer3(){
-    if(this.count3 == 1){
-      this.ms = "Le gusta a "+ this.count3 +" persona";
-    }else if(this.count3 >= 50){
-      this.ms = "Les gusta a "+ this.count3 +" personas, muy bien!";
-    }else{
-      this.ms = "Les gusta a "+ this.count3 +" personas";
-    }
-    return this.ms;
+    return this.voto(this.count3);
   }
   leer2(){
     return this.voto(this.count2);
@@ -129,8 +105,6 @@ export class InformacionService {
   voto(c:number){
     if(c == 1){
       this.ms = c +" voto";
-    }else if(c >= 50){
-      this.ms = c +" votos, muy bien!";
     }else{
       this.ms = c +" votos";
     }

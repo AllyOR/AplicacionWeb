@@ -4,16 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 // import { pagebol } from './components/Pagebol/Pagebol.component';
 
 const routes: Routes = [
-  //
-  // {
-  //   path: 'pagebol',
-  //   component: pagebol
-  // },
-  // {
-  //   path: 'about-us',
-  //   component: AboutUsComponent
-  // }
-//
+
 ];
 
 @NgModule({

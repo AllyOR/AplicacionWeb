@@ -10,7 +10,7 @@ export class InicioComponent implements OnInit {
   name = 'Diseño y Tecnología Web';
   mr = 'Máster Universitario en Diseño y Producción Multimedia';
   univ = 'UNIR';
-  tituloColor = 'darkblue';
+  tituloColor = 'darkslategray';
   oculto = true;
 
   constructor() { }

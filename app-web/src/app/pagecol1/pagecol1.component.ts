@@ -9,7 +9,7 @@ export class Pagecol1Component implements OnInit {
 
   name = 'Colombia - Lilly Zamara Zambrano'
   lugar = 'LA PLAYA DE BELÉN';
-  tituloColor = 'darkblue';
+  tituloColor = 'darkslategray';
 
   constructor() { }
 

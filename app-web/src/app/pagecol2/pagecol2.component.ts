@@ -9,7 +9,7 @@ export class Pagecol2Component implements OnInit {
 
   name = 'Colombia - Diego Romero Cárdenas'
   lugar = 'NEVADO DEL COCUY';
-  tituloColor = 'darkblue';
+  tituloColor = 'darkslategray';
 
   constructor() { }
 

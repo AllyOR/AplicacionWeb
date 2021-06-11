@@ -1,7 +1,11 @@
 .btn-primary{
-  background-color: midnightblue;
-  color: azure;
+  /*background-color: midnightblue;*/
+  /*color: azure;*/
+  /*border-radius: 3rem;*/
+  background-color: darkslategray;
+  color: khaki;
   border-radius: 3rem;
+  border-color: cadetblue;
 }
 
 .oculto{

@@ -5,11 +5,18 @@
             <img [src] = imags width="60" height="40">
     </div>
 
-    <div [ngSwitch]="eval">
-      <a class="navbar-brand" href="#" *ngSwitchCase="1"><strong>{{name1}}</strong></a>
-      <a class="navbar-brand" href="#" *ngSwitchCase="2"><strong>{{name2}}</strong></a>
-      <a class="navbar-brand" href="#" *ngSwitchDefault><strong>{{name1}}</strong></a>
+<!--    <div [ngSwitch]="eval">-->
+<!--      <a class="navbar-brand" routerLink="" *ngSwitchCase="1"><strong>{{name1}}</strong></a>-->
+<!--&lt;!&ndash;      <a class="navbar-brand" routerLink="" *ngSwitchCase="1">{{nombreEm}}</a>&ndash;&gt;-->
+<!--      &lt;!&ndash;      <a class="navbar-brand" href="index.html" *ngSwitchCase="1"><strong>{{name1}}</strong></a>&ndash;&gt;-->
+<!--      <a class="navbar-brand" href="#" *ngSwitchCase="2"><strong>{{name2}}</strong></a>-->
+<!--      <a class="navbar-brand" href="#" *ngSwitchDefault><strong>{{name1}}</strong></a>-->
+<!--    </div>-->
+<!--    <strong *ngIf="eval" class="text-center">{{nombreEm}}</strong>-->
+    <div *ngIf="eval">
+      <a class="navbar-brand" routerLink=""><strong>{{nombreEm}}</strong></a>
     </div>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -33,7 +40,36 @@
             </li>
           </ul>
         </li>
+
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/nosotros">Nosotros</a>
+        </li>
       </ul>
+
+      <!-- INFO -->
+      <div class="text-center " [ngClass]="visible ? 'visible' : 'oculto'">
+        <button type="button" class="btn btn-warning text-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Información
+        </button>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"> Bienvenid@ a {{nombreEm}}!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Puedes ver nuestras opciones de viaje en los sitios turísticos de Bolivia y Colombia. Disfruta el recorrido.
+              </div>
+              <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- END INFO -->
     </div>
   </div>
+
 </nav>

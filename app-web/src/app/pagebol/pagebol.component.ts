@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class PagebolComponent implements OnInit {
 
   lugar = 'SALAR DE UYUNI';
-  tituloColor = 'darkblue';
+  tituloColor = 'darkslategrey';
   ocultonom = true;
   nomlug = 'Salar de Uyuni';
 
