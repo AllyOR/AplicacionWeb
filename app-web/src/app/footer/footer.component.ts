@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {InformacionService} from "../core/services/informacion.service";
+import {DatosempresaService} from "../core/services/datosempresa.service";
 
 @Component({
   selector: 'app-footer',
@@ -7,17 +7,16 @@ import {InformacionService} from "../core/services/informacion.service";
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
-  name = this.informacion.getNombreEmpresa();
+  name = this.datosEmpresa.getNombreEmpresa();
   existe = 0;
   red0 = 'Email: zadial@gmail.com';
   red1 = 'Facebook: @zadial';
   red2 = 'Instagram: @zadial';
   red3 = 'Twitter: @zadial';
 
-  constructor(private informacion: InformacionService) { }
+  constructor(private datosEmpresa: DatosempresaService) { }
 
   ngOnInit(): void {
   }
-
 
 }

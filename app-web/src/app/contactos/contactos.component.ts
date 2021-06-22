@@ -90,21 +90,14 @@ export class ContactosComponent implements OnInit {
     return this.n1;
   }
 
-  // enviarLike(){
-  //   this.count = this.informacion.total();
-  //   this.n = this.informacion.leer();
-  //   console.log(this.n);
-  //   this.conteoLikesTot();
-  //   return this.n;
-  // }
-
   conteoLikesTot(){
     this.count1 = this.informacion.totalSum();
     if (this.count1 == 1){
       this.msg1 = "Ha votado " + this.count1 + " persona";
     } else {
-      if (this.count1 == 2){
+      if (this.count1 == 5){
         window.alert("Gracias por tu interés, seguiremos mejorando!");
+        this.msg1 = "Han votado " + this.count1 + " personas";
       } else if (this.count1 >= 20){
         this.msg1 = "Ha votado "+ this.count1 +" personas, muy bien!";
       }else{
@@ -123,11 +116,9 @@ export class ContactosComponent implements OnInit {
   conteoLikes3(){
     this.c3++;
   }
-
   conteoLikes2(){
     this.c2++;
   }
-
   conteoLikes1(){
     this.c1++;
   }
@@ -137,4 +128,11 @@ export class ContactosComponent implements OnInit {
     return this.count2;
   }
 
+  // enviarLike(){
+  //   this.count = this.informacion.total();
+  //   this.n = this.informacion.leer();
+  //   console.log(this.n);
+  //   this.conteoLikesTot();
+  //   return this.n;
+  // }
 }

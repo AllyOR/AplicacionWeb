@@ -6,7 +6,6 @@ import { Injectable } from '@angular/core';
 export class InformacionService {
   count : number = -1;
   ms = '';
-  nombreEmpresa = 'ZADIAL';
   count5 : number = 0;
   count4 : number = 0;
   count3 : number = 0;
@@ -26,26 +25,9 @@ export class InformacionService {
     this.count++;
     return this.count;
   }
-
-  // leer(c1:number){
-  //   if(c1 == 1){
-  //     this.ms = "Le gusta a "+ c1 +" persona";
-  //   }else if(c1 >= 20){
-  //     this.ms = "Les gusta a "+ c1 +" personas, muy bien!";
-  //   }else{
-  //     this.ms = "Les gusta a "+ c1 +" personas";
-  //   }
-  //   return this.ms;
-  // }
-
-  getNombreEmpresa(){
-    return this.nombreEmpresa;
-  }
-
   totalSum(){
-    this.countS = this.count5 + this.count4 + this.count3 + this.count2 + this.count1;
-    // this.ms = this.leer(this.countS);
-    // console.log(this.ms)
+    this.countS = this.count5 + this.count4 +
+      this.count3 + this.count2 + this.count1;
     return this.countS;
   }
 
@@ -101,7 +83,6 @@ export class InformacionService {
     }
     return this.ms;
   }
-
   voto(c:number){
     if(c == 1){
       this.ms = c +" voto";
@@ -110,4 +91,15 @@ export class InformacionService {
     }
     return this.ms;
   }
+
+  // leer(c1:number){
+  //   if(c1 == 1){
+  //     this.ms = "Le gusta a "+ c1 +" persona";
+  //   }else if(c1 >= 20){
+  //     this.ms = "Les gusta a "+ c1 +" personas, muy bien!";
+  //   }else{
+  //     this.ms = "Les gusta a "+ c1 +" personas";
+  //   }
+  //   return this.ms;
+  // }
 }

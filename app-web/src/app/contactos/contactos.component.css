@@ -8,6 +8,10 @@
   border-color: cadetblue;
 }
 
+.back{
+  background-color: rgba(255,207,62,0.4);
+}
+
 .oculto{
   display: none;
 }
